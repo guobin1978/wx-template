@@ -1,0 +1,59 @@
+/* ==================
+        初始化
+ ==================== */
+ page {
+	--black: #000000;
+	--white: #ffffff;
+
+	background-color: var(--white);
+	font-size: 28rpx;
+	color: var(--black);
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+	box-sizing: border-box;
+}
+
+image {
+  vertical-align: middle;
+}
+
+button {
+  padding: 0;
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+}
+
+.button-hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+button::after {
+  display: none;
+}
+
+.round {
+	border-radius: 5000rpx;
+}
+
+.radius {
+	border-radius: 6rpx;
+}
+
+/* 隐藏默认滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

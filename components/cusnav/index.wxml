@@ -1,0 +1,16 @@
+<!--components/cusnav/index.wxml-->
+<view class="cusnav" style="background: {{background}}">
+  <view style="height: {{statusBarHeight}}px;"></view>
+  <view class="title-bar" style="height: {{titleBarHeight}}px; line-height: {{titleBarHeight}}px">
+    <i-icon wx:if="{{return}}" class="cus-icon" type="return" size="28" color="#80848f" />
+    <view wx:else class="icon">
+      <image class="cus-icon" src="{{avatarUrl || defaultSrc}}"/>
+      <button class="cus-icon" plain="{{true}}"  hover-stop-propagation="false" open-type="getUserInfo" bindgetuserinfo="getuserinfo"></button>
+    </view>
+    <view class="search">
+      <i-icon class="search-icon" type="search" size="20" color="#000000" />
+      <text class="search-placeholder">{{placeholder}}</text>
+    </view>
+  </view>
+</view>
+<view style="height: {{statusBarHeight + titleBarHeight}}px"></view>

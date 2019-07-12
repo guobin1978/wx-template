@@ -1,0 +1,11 @@
+<cover-view class="tabbar" scroll-top="0" style="background: {{background}}">
+<block wx:for="{{list}}" wx:key="{{index}}">
+  <cover-view class="tabbar-item" scroll-top="0" data-index="{{index}}" bindtap="navigate">
+    <cover-image class="tabbar-image" src="{{activeIndex == index ? item.activeSrc :item.src}}" bindload="" binderror=""></cover-image>
+    <cover-view class="tabbar-text" scroll-top="0" style="color: {{activeIndex == index ? activeColor: color}}">
+      {{item.title}}
+    </cover-view>
+  </cover-view>
+</block>
+</cover-view>
+  

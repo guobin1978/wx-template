@@ -1,0 +1,49 @@
+/* components/cusnav/index.wxss */
+.cusnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.title-bar {
+  text-align: center;
+  position: relative;
+}
+
+.cus-icon {
+  position: absolute;
+  left: 40rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 100%;
+}
+button[plain] {
+  border: none;
+}
+.search {
+  background: #F2F2F2;
+  width: 370rpx;
+  height: 62rpx;
+  position: absolute;
+  left: 144rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius:31rpx;
+}
+.search-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 68rpx;
+  transform: translateY(-50%);
+  font-size: 28rpx;
+  color: #999999;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 30rpx;
+  transform: translateY(-50%);
+}

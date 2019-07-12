@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<cusnav background="#ffffff"></cusnav>
+
+<view>
+</view>
+<tabbar  color="#999999" active-color="#121212" bindgetIndex="getIndex"></tabbar>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cusnav": "/components/cusnav/index",
+    "tabbar": "/components/tabbar/index"
+  }
+}
